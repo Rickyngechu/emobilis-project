@@ -1,0 +1,799 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>All in one developer's resources</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+    {#        {% static 'app/' %}#}
+    <link href="  {% static 'app/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link href="  {% static 'app/css/bootstrap-icons.css' %}" rel="stylesheet">
+
+    <link href="  {% static 'app/css/templatemo-topic-listing.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+<main>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <i class="bi-back"></i>
+                <span class="text-white">DevResource</span>
+            </a>
+
+            <div class="d-lg-none ms-auto me-4">
+                <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">Browse Topics</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_5">FAQs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="{% url 'signup' %}">login</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="topics-listing.html">Topics Listing</a></li>
+
+                            <li><a class="dropdown-item" href="contact.html">Contact Form</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+
+                <div class="d-none d-lg-block">
+                    <a href="{% url 'signup' %}" class="navbar-icon bi-person smoothscroll"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 mx-auto text-center">
+                    <h1 class="text-white text-center">Discover. Learn. Enjoy</h1>
+
+                    <h6 class="text-center">platform for developers around the world</h6>
+
+
+                    <a href="#section_2" class="get-started btn custom-btn custom-border-btn ms-3 mt-4">Get stated</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore-section section-padding" id="section_2">
+        <div class="container">
+
+            <div class="col-12 text-center">
+                <h2 class="mb-4">Porpular resources</h2>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="design-tab" data-bs-toggle="tab"
+                                data-bs-target="#design-tab-pane" type="button" role="tab"
+                                aria-controls="design-tab-pane" aria-selected="true">Design
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
+                                data-bs-target="#marketing-tab-pane" type="button" role="tab"
+                                aria-controls="marketing-tab-pane" aria-selected="false">Css Frameworks
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="finance-tab" data-bs-toggle="tab"
+                                data-bs-target="#finance-tab-pane" type="button" role="tab"
+                                aria-controls="finance-tab-pane" aria-selected="false">Testing
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane"
+                                type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">Deployment
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="education-tab" data-bs-toggle="tab"
+                                data-bs-target="#education-tab-pane" type="button" role="tab"
+                                aria-controls="education-tab-pane" aria-selected="false">Code editors
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel"
+                             aria-labelledby="design-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Figma</h5>
+
+                                                    <p class="mb-0">A cloud-based design tool that offers a wide range
+                                                        of features for UI design, including vector editing,
+                                                        prototyping, and collaboration.</p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-design rounded-pill ms-auto">14</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/figma.jpg' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Framer</h5>
+
+                                                    <p class="mb-0">A powerful UI design tool that is based on React
+                                                        Native, allowing you to create interactive prototypes and deploy
+                                                        them to mobile devices. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-design rounded-pill ms-auto">75</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/framer.jpg' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Adobe XD</h5>
+
+                                                    <p class="mb-0">A comprehensive design tool from Adobe that includes
+                                                        wireframing, prototyping, and interaction design
+                                                        capabilities. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-design rounded-pill ms-auto">100</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/xd.jpg' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel"
+                             aria-labelledby="marketing-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">BootStrap</h5>
+
+                                                    <p class="mb-0"> Bootstrap is a free and open-source CSS framework
+                                                        directed at designing responsive, mobile-first projects. It
+                                                        provides a wide range of pre-built components and styles that
+                                                        can be used to create a variety of websites and web
+                                                        applications. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-advertising rounded-pill ms-auto">30</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/Bootstrap.jpg' %}" class="custom-block-image img-fluid"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Tailwind css</h5>
+
+                                                    <p class="mb-0">Tailwind CSS is a utility-first CSS framework. It
+                                                        provides a large collection of low-level utility classes that
+                                                        can be used to style HTML elements. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-advertising rounded-pill ms-auto">65</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/tailwindcss.jpg' %}"
+                                                 class="custom-block-image img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Materialise</h5>
+
+                                                    <p class="mb-0">Materialize is a CSS framework based on Google's
+                                                        Material Design guidelines. It provides a set of components and
+                                                        styles that can be used to create modern and responsive web
+                                                        applications with a consistent look and feel. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-advertising rounded-pill ms-auto">50</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/materialize.png' %}"
+                                                 class="custom-block-image img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab"
+                             tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Browser stack</h5>
+
+                                                    <p class="mb-0">A cloud-based testing platform that allows you to
+                                                        test your website or app on a wide variety of real browsers and
+                                                        devices. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-finance rounded-pill ms-auto">30</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/browerstack.png' %}"
+                                                 class="custom-block-image img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Postman</h5>
+
+                                                    <p class="mb-0">This is basically a tool for testing and debugging
+                                                        APIs for development and deployment purposes. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-finance rounded-pill ms-auto">30</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/postman.png' %}" class="custom-block-image img-fluid"
+                                                 alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
+                             tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Heroku</h5>
+
+                                                    <p class="mb-0">Heroku is a cloud platform for deploying and hosting
+                                                        Ruby on Rails applications. It is known for its ease of use and
+                                                        its support for a variety of add-ons. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-music rounded-pill ms-auto">45</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/heroku.jpg' %}" class="custom-block-image img-fluid "
+                                                 alt="Heroku">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Vercel</h5>
+
+                                                    <p class="mb-0">Vercel is a cloud platform for deploying and hosting
+                                                        web applications. It provides a variety of features, including a
+                                                        simple deployment process, automatic scaling, and a global
+                                                        CDN. </p>
+                                                </div>
+                                                <!--
+                                                                                                        <span class="badge bg-music rounded-pill ms-auto">45</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/vercel.jpg' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto" alt="Vercel">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Netlify</h5>
+
+                                                    <p class="mb-0">Netlify is another popular cloud platform for
+                                                        deploying and hosting web applications. It is known for its ease
+                                                        of use and its support for a wide range of frameworks and
+                                                        CMSs.</p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-music rounded-pill ms-auto">20</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/netlify.png' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto" alt="Netlify">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="education-tab-pane" role="tabpanel"
+                             aria-labelledby="education-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Visual Studio Code</h5>
+
+                                                    <p class="mb-0">A popular open-source code editor that supports a
+                                                        wide variety of languages and extensions.</p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-education rounded-pill ms-auto">80</span> -->
+                                            </div>
+
+                                            <img src=" {% static 'app/images/topics/vscode.jpg' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <a href="{% url 'resources' %}">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Sublime text</h5>
+
+                                                    <p class="mb-0"> This is another popular code editor that is known
+                                                        for its speed and customization. </p>
+                                                </div>
+
+                                                <!-- <span class="badge bg-education rounded-pill ms-auto">75</span> -->
+                                            </div>
+
+                                            <img src="{% static 'app/images/topics/sublime.jpg' %}"
+                                                 class="custom-block-image img-fluid w-50 h-50 mx-auto"
+                                                 alt="Sublime text">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="timeline-section section-padding" id="section_3">
+        <div class="section-overlay"></div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 text-center">
+                    <h2 class="text-white mb-4">How does it work?</h2>
+                </div>
+
+                <div class="col-lg-10 col-12 mx-auto">
+                    <div class="timeline-container">
+                        <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                            <div class="list-progress">
+                                <div class="inner"></div>
+                            </div>
+
+                            <li>
+                                <h4 class="text-white mb-3">Get your favourite tool</h4>
+
+                                <p class="text-white">Search through the various list and categories of tools available
+                                    and from there you can implement them.</p>
+
+                                <div class="icon-holder">
+                                    <i class="bi-search"></i>
+                                </div>
+                            </li>
+
+                            <li>
+                                <h4 class="text-white mb-3">Bookmark &amp; Keep it for yourself</h4>
+
+                                <p class="text-white">For future refrence you can bookmark the tool identified for easy
+                                    rietrieval.</p>
+
+                                <div class="icon-holder">
+                                    <i class="bi-bookmark"></i>
+                                </div>
+                            </li>
+
+                            <li>
+                                <h4 class="text-white mb-3">Read &amp; Enjoy</h4>
+
+                                <p class="text-white">Since each tool has got a link to the website,you can reference
+                                    through the attached links.</p>
+
+                                <div class="icon-holder">
+                                    <i class="bi-book"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="topics py-5" id="section_4">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-xl-7 col-lg-8  text-center">
+                    <h2 class="text-black mb-4">Explore top Resources</h2>
+                </div>
+            </div>
+
+            <div class="row gap-2 justify-content-center mb-5">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic1.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Fonts</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic2.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Html</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic3.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Css</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic4.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Colors</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic5.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Photos</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic6.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Python</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic7.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Javascript</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{% static 'app/images/items/topic8.png' %}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="{% url 'resources' %}" class="text-white">Node js</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mt-20">
+                        <a href="{% url 'resources' %}" class="btn custom-btn mt-2 mt-lg-3 ">View More Subjects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq-section section-padding" id="section_5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                    <h2 class="mb-4">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-lg-5 col-12">
+                    <img src="{% static 'app/images/faq_graphic.jpg' %}" class="img-fluid" alt="FAQs">
+                </div>
+
+                <div class="col-lg-6 col-12 m-auto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is dev Resource?
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This is a platform for developer's resources hub.Minimising the time spent on
+                                    researching various types of resources is the main goal and objective.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How to find a resource?
+                                </button>
+                            </h2>
+
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can browse through various tabs based on the topics eg,html,css,coding softwares
+                                    frameworks,images tools.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Does it need to paid?
+                                </button>
+                            </h2>
+
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    No payment required but for the developers who will be uploading their resources on
+                                    our platform,may me compenseted.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="site-footer section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-12 mb-4 pb-2">
+                <a class="navbar-brand mb-2" href="{% url 'home' %}">
+                    <i class="bi-back"></i>
+                    <span>Topic</span>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h6 class="site-footer-title mb-3">Resources</h6>
+
+                <ul class="site-footer-links">
+                    <li class="site-footer-link-item">
+                        <a href="#" class="site-footer-link">Home</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="#" class="site-footer-link">How it works</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="#" class="site-footer-link">FAQs</a>
+                    </li>
+
+                    <li class="site-footer-link-item">
+                        <a href="#" class="site-footer-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                <h6 class="site-footer-title mb-3">Information</h6>
+
+                <p class="text-white d-flex mb-1">
+                    <a href="tel: 305-240-9671" class="site-footer-link">
+                        +25413131232131
+                    </a>
+                </p>
+
+                <p class="text-white d-flex">
+                    <a href="mailto:info@company.com" class="site-footer-link">
+                        info@devresource
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+
+
+                <p class="copyright-text mt-lg-5 mt-4">Copyright © 2023 Devs resources inc.All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<!-- JAVASCRIPT FILES -->
+<script src="  {% static 'app/js/jquery.min.js' %}"></script>
+<script src="  {% static 'app/js/bootstrap.bundle.min.js' %}"></script>
+<script src="  {% static 'app/js/jquery.sticky.js' %}"></script>
+<script src="  {% static 'app/js/click-scroll.js' %}"></script>
+<script src="  {% static 'app/js/custom.js' %}"></script>
+<script src="  {% static 'app/js/smooth.js' %}"></script>
+
+</body>
+</html>

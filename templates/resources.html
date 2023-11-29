@@ -1,0 +1,1781 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Resources</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="{% static 'app/css/bootstrap.min.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'app/css/bootstrap-icons.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'app/css/templatemo-topic-listing.css' %}" rel="stylesheet" />
+
+  </head>
+
+  <body id="top">
+    <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <i class="bi-back"></i>
+            <span class="text-white">DevResource</span>
+          </a>
+
+          <div class="d-lg-none ms-auto me-4">
+            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-5 me-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="{% url 'home' %}"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="{% url 'home' %}"
+                  > Browse Topics </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="{% url 'home' %}"
+                  >How it works</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="{% url 'home' %}"
+                  >FAQs</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="{% url 'signup' %}"
+                  >Login/sign</a
+                >
+              </li>
+            </ul>
+
+            <div class="d-none d-lg-block">
+              <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header
+        class="site-header d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5 col-12 mb-5">
+              <h2 class="text-white">
+                Explore New<br />
+                resources
+              </h2>
+
+              <div class="d-flex align-items-center mt-5">
+                <a
+                  href="#resources"
+                  class="btn custom-btn custom-border-btn smoothscroll me-4"
+                  >View More</a
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-12">
+              <div class="topics-detail-block bg-white shadow-lg">
+                <img
+                  src="{% static 'app/images/topics/undraw_Remote_design_team_re_urdx.png' %}"
+                  class="topics-detail-block-image img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section-html section-padding40 fix" id="resources">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+              <div class="section-tittle text-center mb-55">
+                <h2>Our featured <span class="text-danger">Resources</span></h2>
+              </div>
+            </div>
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">html</span> resource
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/html/mdn.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="#" class="refer-link">Mdn html</a>
+                </div>
+                <p class="res-txt">
+                  MDN Web Docs is the official documentation for HTML and other
+                  web technologies from Mozilla. It provides detailed and
+                  authoritative information on HTML syntax, APIs, and best
+                  practices.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/html/csstricks.jpeg' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Css tricks</a>
+                </div>
+                <p class="res-txt">
+                  Super useful reference, gives you HTML entity name, numeric
+                  code, hex code and ISO code.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/html/w3schools.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">W3schools</a>
+                </div>
+                <p class="res-txt">
+                  W3Schools is a popular and comprehensive website for learning
+                  HTML and other web technologies. It provides tutorials,
+                  reference documentation, and examples.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/html/dog.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Html dog</a>
+                </div>
+                <p class="res-txt">
+                  HTML Dog is a website focused on web development and
+                  standards. It provides a comprehensive HTML reference, as well
+                  as articles, tutorials, and news.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-fonts section-padding40">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Fonts</span> resource
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/google.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="#" class="refer-link">Google fonts</a>
+                </div>
+                <p class="res-txt">
+                  A vast library of open-source fonts that are free to use for
+                  both commercial and personal projects.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/squirel.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Font Squirrel</a>
+                </div>
+                <p class="res-txt">
+                  A popular website for downloading free fonts. They offer a
+                  wide variety of fonts, including serif, sans-serif, script,
+                  and display fonts.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/dafont.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Dafont</a>
+                </div>
+                <p class="res-txt">
+                  Another popular website for downloading free fonts. They offer
+                  a wide variety of fonts, including vintage, modern, and
+                  international fonts.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/1001.jpeg' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">1001 Free fonts</a>
+                </div>
+                <p class="res-txt">
+                  A website that offers a collection of over 10,000 free fonts.
+                  If your prefrence is to download fonts which you will then
+                  implement.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/myfts.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">My fonts</a>
+                </div>
+                <p class="res-txt">
+                  A website that offers a vast library of fonts from leading
+                  font foundries. They offer a variety of font purchasing
+                  options, including individual font licenses, font
+                  subscriptions, and font bundles.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/ftfabric.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Font fabric</a>
+                </div>
+                <p class="res-txt">
+                  A website that offers a collection of high-quality fonts from
+                  independent font foundries. They also offer a variety of font
+                  workshops and tutorials.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/fonts/ftshop.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link"> Font shop </a>
+                </div>
+                <p class="res-txt">
+                  A website that offers a curated collection of high-quality
+                  fonts from independent font foundries.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-colors">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Colors</span> resource
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/coolors.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="#" class="refer-link">Color contrast</a>
+                </div>
+                <p class="res-txt">
+                  This is a tool to check whether two colors have a good
+                  contrast ratio. Essential for building accessible websites!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/0to255new.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">0 to 255</a>
+                </div>
+                <p class="res-txt">
+                  Another helpful tool that generates variations of colors which
+                  gives you a wide range of selection.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/uigradients.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Ui gradients</a>
+                </div>
+                <p class="res-txt">
+                  Collection of beautiful color gradients for you to choose from
+                  and export to your project.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/paletton.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Palleton</a>
+                </div>
+                <p class="res-txt">
+                  A very popular tool which allows you to create color
+                  combinations that play well together.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/maketintsandshades.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Shade generator</a>
+                </div>
+                <p class="res-txt">
+                  Easily create lighter and darker versions of any base color.
+                  Perfect for hovers, borders and gradients.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/lolcolors.svg' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Lol colors</a>
+                </div>
+                <p class="res-txt">
+                  A website that offers a collection of high-quality fonts from
+                  independent font foundries. They also offer a variety of font
+                  workshops and tutorials.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/colorhunt.gif' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link"> Color hunt </a>
+                </div>
+                <p class="res-txt">
+                  Don't know what colors to use for your website? Colorhunt
+                  helps you with beautiful color palettes.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/tailwind.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link"> Tailwind colors </a>
+                </div>
+                <p class="res-txt">
+                  Another excellent and popular set of color pallettes. Great
+                  selection of colors for all your projects.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/materialpalette.jpg' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link"> Material pallete </a>
+                </div>
+                <p class="res-txt">
+                  Yet another set of colors, inspired in material design.
+                  Generate and download your palette.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/colors/openc.png"' %} alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Open colour </a>
+                </div>
+                <p class="res-txt">
+                  An open-source color scheme, optimized for UI. My go-to
+                  resource to choose colors from scratch.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-js">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Javascript</span> resource
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/js/jsmdn.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="#" class="refer-link">Mdn reference</a>
+                </div>
+                <p class="res-txt">
+                  Another reference by MDN, this one is for JavaScript. This is
+                  pretty advanced stuff.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/js/mdnoperator.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Operator Table</a>
+                </div>
+                <p class="res-txt">
+                  Very handy cheatsheet to determine which JavaScript operators
+                  are evaluated first.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/js/mdnevents.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">Event Reference</a>
+                </div>
+                <p class="res-txt">
+                  Handy reference list of all DOM events with explanations,
+                  nicely categorized.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/js/es6-compat.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">ES6+ Compatibility </a>
+                </div>
+                <p class="res-txt">
+                  Check out all the new ES6+ features supported and their
+                  browser support.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/js/hubspot.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">DOM Reference</a>
+                </div>
+                <p class="res-txt">
+                  Called "You Might Not Need jQuery", but I use this as a
+                  complete DOM manipulation reference.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/js/keycodes.jpg' %}i" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link">KeyCodes Reference</a>
+                </div>
+                <p class="res-txt">
+                  Get keyboard codes, unicodes and keycodes. Vital reference for
+                  keypress event handling.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="{% static 'app/images/js/github.png' %}" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link"> Principles of good js </a>
+                </div>
+                <p class="res-txt">
+                  While I don't follow this 100%, it's good to have a style
+                  guide to write better code.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src="images/js/js-patterns.png" alt="css" />
+                  </div>
+
+                  <a href="#" class="refer-link"> js design patterns </a>
+                </div>
+                <p class="res-txt">
+                  For more advanced developers: learn all common JavaScript
+                  design patterns. Perfect reference.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-images">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">images</span> resource
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/unsplash.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="https://unsplash.com/" class="refer-link"
+                    >Unsplash</a
+                  >
+                </div>
+                <p class="res-txt">
+                  This is the ultimate resource for free high-resolution photos.
+                  There are more photos here than you can imagine!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/pexels.png' %}i" alt="css" />
+                  </div>
+
+                  <a href="https://www.pexels.com/" class="refer-link"
+                    >Pexels</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Another great resource for free stock photos and videos,
+                  created by photographers around the world.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/isorepublic.png' %} " alt="css" />
+                  </div>
+
+                  <a href="http://isorepublic.com/" class="refer-link"
+                    >Iso republic</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Free and premium stock photos for your website. Easily
+                  searchable by topic.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/pixaby.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://pixabay.com/en/" class="refer-link"
+                    >Pixaby
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Over 2M free stock photos, vectors and art illustrations you
+                  can use anywhere.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/undraw.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://undraw.co/illustrations" class="refer-link"
+                    >Undraw</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Hundreds of free and open-source illustrations for your
+                  websites, and colors are even customizable.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/drawkit.png' %} " alt="css" />
+                  </div>
+
+                  <a href="https://www.drawkit.io/" class="refer-link"
+                    >Drawkit</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Hand-drawn vector illustration and icon resources, perfect for
+                  your next project.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/uifaces.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://uifaces.co/" class="refer-link">
+                    UI faces
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Avatar photos, perfect for mockups or placeholders. Don't use
+                  them for real people...
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/randomuser.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://randomuser.me/" class="refer-link">
+                    User generator
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Generate random user data, including photos. Like Lorem Ipsum,
+                  but for people.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/img/coverr.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://www.coverr.co/" class="refer-link">
+                    Coverr
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Best resource for beautiful and free videos about every
+                  imaginable topic, easily searchable.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-icons">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Icons</span> resource
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/ionicons.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="https://ionic.io/ionicons" class="refer-link"
+                    >Ion icons</a
+                  >
+                </div>
+                <p class="res-txt">
+                  A beautiful and round icon set, very easy to use, and 100%
+                  free even for commercial usage.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/heroicons.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://heroicons.com/" class="refer-link"
+                    >Hero icons</a
+                  >
+                </div>
+                <p class="res-txt">
+                  A 230-pieces icon set, available in outline and solid styles,
+                  best used at 24x24 px
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/phosphoricons.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://phosphoricons.com//" class="refer-link"
+                    >Phosphor icons</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Another beautiful, more boxy SVG icon set. Customizable
+                  thickness and color.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/fontawesome.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://fontawesome.io/" class="refer-link"
+                    >Font awsome
+                  </a>
+                </div>
+                <p class="res-txt">
+                  A highly popular icon font, consisting of 1000+ icons spread
+                  across countless categories.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/icons8.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://icons8.com/line-awesome" class="refer-link"
+                    >Line awsome</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Line awesome (previous icons) looks a bit outdated at this
+                  point, so this is a very simple alternative.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/iconmonstr.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://iconmonstr.com/" class="refer-link"
+                    >Iconmontr</a
+                  >
+                </div>
+                <p class="res-txt">
+                  4500+ free and simple icons in 300+ collections, perfect if
+                  you need a single icon and not a whole set.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/icons8.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://icons8.com/" class="refer-link"> Icons 8 </a>
+                </div>
+                <p class="res-txt">
+                  An incredible premium resource. Has 175,000+ icons, some for
+                  free, across countless styles and categories
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/icon54.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://icon54.com/" class="refer-link"> Icon 54 </a>
+                </div>
+                <p class="res-txt">
+                  5000 vector icons for iOS, Android, Websites and Apps. Worth
+                  checking out if you have a budget!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/icomoon.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://icomoon.io/" class="refer-link"> Icomoon </a>
+                </div>
+                <p class="res-txt">
+                  Tool to convert icon fonts to SVG icons and sprites. I use it
+                  in my advanced CSS course.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/icon/iconjar.jpg' %}" alt="css" />
+                  </div>
+
+                  <a href="http://geticonjar.com/" class="refer-link">
+                    Iconjar
+                  </a>
+                </div>
+                <p class="res-txt">
+                  A macOS app to organize, search and use all your icons in an
+                  easy way.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-inspiration">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Design</span> Inspiration
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/design/dribbble.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="https://dribbble.com/" class="refer-link">Dribble</a>
+                </div>
+                <p class="res-txt">
+                  Most well-known destination to find design inspiration, not
+                  just web design.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/design/screenlane.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://screenlane.com/" class="refer-link"
+                    >Screenlane</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Inspiration for individual elements and components. Another of
+                  my go-to resources!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/design/awwwards.png' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://www.awwwards.com/websites/"
+                    class="refer-link"
+                    >Awwwards</a
+                  >
+                </div>
+                <p class="res-txt">
+                  The awards of design, creativity and innovation on the
+                  internet. This one features more creative designs.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/design/onepagelove.jpg' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://onepagelove.com/inspiration"
+                    class="refer-link"
+                    >One page love
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Another gallery of beautiful websites, sorted into multiple
+                  categories.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/design/landbook.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://land-book.com/" class="refer-link"
+                    >Land book</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Showcase of beautiful web design. My essential #1 inspiration
+                  resource when I design websites!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/design/pint.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://pintrest.com/" class="refer-link">Pintrest</a>
+                </div>
+                <p class="res-txt">
+                  Find inspiration for landing pages,website sections and
+                  designs.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-nodejs">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Design</span> Inspiration
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/node-docs.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="https://nodejs.org/en/docs/" class="refer-link"
+                    >Node js</a
+                  >
+                </div>
+                <p class="res-txt">
+                  The Node.js documentation is an essential guide for every
+                  developer. There are also useful guides
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/express.png' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://expressjs.com/en/4x/api.html"
+                    class="refer-link"
+                    >Express</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Essential manual for building express applications. Also
+                  contains tutorials and other resources.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/mongo.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://docs.mongodb.com/manual/" class="refer-link"
+                    >Mondo Db</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Learn all about the amazing features of MongDB, especially the
+                  ones not covered in my course
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/mongoose.png' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://mongoosejs.com/docs/guide.html"
+                    class="refer-link"
+                    >Moongose lib
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Keep this open at all times when building an app.
+                  Indispensable documentation for every developer!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/best-practices.jpg' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://github.com/i0natan/nodebestpractices?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more"
+                    class="refer-link"
+                    >Best practices</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Huge list of best practices for building Node apps. Important
+                  for big projects.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/awesome-node.png' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://github.com/sindresorhus/awesome-nodejs"
+                    class="refer-link"
+                    >Awsome node</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Want to use more packages than you learned in my course? This
+                  is a great list to get you started!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/node/node-weekly.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://nodeweekly.com/" class="refer-link"
+                    >Newsletter</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Get informed about everything happening in the nodejs world
+                  with weekly updates
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testingtool">
+        <div class="container">
+          <div class="row justify-content-center">
+            <p class="title-sectheading py-3">
+              Refer and even bookmark favourite
+              <span class="text-danger">Testing</span> Deploying
+            </p>
+            <div class="items-grid-cont">
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/hover.png' %}" alt="mdn" />
+                  </div>
+
+                  <a href="https://www.hover.com/" class="refer-link">Hover</a>
+                </div>
+                <p class="res-txt">
+                  If you need to buy a domain name, this is the place to go They
+                  have good domain plans tailored just for you.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/netlify.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://www.netlify.com/" class="refer-link"
+                    >Netlify</a
+                  >
+                </div>
+                <p class="res-txt">
+                  My #1 go-to platform to host static websites. They have a very
+                  generous free plan!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/usefathom.jpg' %}" alt="css" />
+                  </div>
+
+                  <a href="https://usefathom.com/" class="refer-link"
+                    >Fathorm</a
+                  >
+                </div>
+                <p class="res-txt">
+                  A privacy-first alternative to Google Analytics. Doesn't
+                  require annoying GDPR cookie notices!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/googleanalytics.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://www.google.com/analytics" class="refer-link"
+                    >Google analytics
+                  </a>
+                </div>
+                <p class="res-txt">
+                  Get free insights about website traffic, visitors and
+                  conversions. A must for every website.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/woorank.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://www.woorank.com/" class="refer-link"
+                    >Woorank</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Get a SEO review of your website to address common issues, and
+                  get ahead of your competition.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/optimization-guide.png' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://kinsta.com/learn/page-speed/"
+                    class="refer-link"
+                    >Optimize speed</a
+                  >
+                </div>
+                <p class="res-txt">
+                  An excellent guide to optimize your webpage speed. This is
+                  something many devs overlook!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/usabilitychecklist.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://teamsuccess.io/UX" class="refer-link"
+                    >Usability checklist</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Another checklist, this one is to catch common usability
+                  problems of your website.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/frontendchecklist.jpg' %}" alt="css" />
+                  </div>
+
+                  <a href="https://frontendchecklist.io/" class="refer-link"
+                    >Frontend checklist</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Extremely popular checklist to check if your website's code is
+                  actually ready for deployment.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/favicongenerator.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://realfavicongenerator.net/" class="refer-link"
+                    >Real favicon</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Just upload an image and this tool creates favicons for your
+                  website for all platforms.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/optimizilla.png' %}" alt="css" />
+                  </div>
+
+                  <a href="http://optimizilla.com/" class="refer-link"
+                    >Opmitzila</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Another tool to compress up to 20 JPEG and PNG images while
+                  keeping a good level of quality
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/squoosh.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://squoosh.app/" class="refer-link">Squosh</a>
+                </div>
+                <p class="res-txt">
+                  Compressing images is the most important performance
+                  optimization. This is my #1 tool to do so!
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/googledev.png' %}" alt="css" />
+                  </div>
+
+                  <a
+                    href="https://developers.google.com/speed/pagespeed/insights/"
+                    class="refer-link"
+                    >Google insights</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Easy tool to test your webpage for performance. You can also
+                  use it in Chrome DevTools (Lighthouse).
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/w3c.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://validator.w3.org/" class="refer-link"
+                    >Css valitor</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Check if your CSS code is valid and contains no errors.
+                  Official W3C tool.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+              <div class="item-1">
+                <div class="top">
+                  <div class="img">
+                    <img src=" {% static 'app/images/test/w3c.png' %}" alt="css" />
+                  </div>
+
+                  <a href="https://validator.w3.org/" class="refer-link"
+                    >Html validator</a
+                  >
+                </div>
+                <p class="res-txt">
+                  Check if your HTML markup is valid and contains no errors.
+                  Official W3C tool.
+                </p>
+
+                <a href="#" class="book">
+                  <ion-icon name="bookmark" class="icon-ion"></ion-icon>
+                  <span>Bookmark</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-css"><div class="container"></div></section>
+    </main>
+
+    <footer class="site-footer section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12 mb-4 pb-2">
+            <a class="navbar-brand mb-2" href=" {% url 'home' %}">
+              <i class="bi-back"></i>
+              <span>Topic</span>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <h6 class="site-footer-title mb-3">Resources</h6>
+
+            <ul class="site-footer-links">
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Home</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">How it works</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">FAQs</a>
+              </li>
+
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+            <h6 class="site-footer-title mb-3">Information</h6>
+
+            <p class="text-white d-flex mb-1">
+              <a href="tel: 305-240-9671" class="site-footer-link">
+                305-240-9671
+              </a>
+            </p>
+
+            <p class="text-white d-flex">
+              <a href="mailto:info@company.com" class="site-footer-link">
+                info@company.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+            <p class="copyright-text mt-lg-5 mt-4">
+              Copyright © 2048 Topic Listing Center. All rights reserved.
+              <br /><br />Design:
+              <a rel="nofollow" href="https://templatemo.com" target="_blank"
+                >TemplateMo</a
+              >
+              Distribution <a href="https://themewagon.com">ThemeWagon</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src=" {% static 'app/js/jquery.min.js' %}"></script>
+    <script src=" {% static 'app/js/bootstrap.bundle.min.js' %}"></script>
+    <script src=" {% static 'app/js/jquery.sticky.js' %}"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src=" {% static 'app/js/custom.js' %}"></script>
+    <script src=" {% static 'app/js/smooth.js' %}"></script>
+  </body>
+</html>
+</html>
