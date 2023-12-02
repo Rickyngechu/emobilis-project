@@ -1,0 +1,17 @@
+<h1>Your Bookmarked Resources</h1>
+<ul>
+    {% for bookmark in bookmarks %}
+    <li>
+        <a href="{{ bookmark.resource.url }}">{{ bookmark.resource.title }}</a>
+        <a href="{% url 'remove_bookmark' bookmark.pk %}">Remove</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>Add Bookmark</h2>
+<form method="post">
+    {% csrf_token %}
+    <p>Title: {{ resource.title }}</p>
+    <p>URL: {{ resource.url }}</p>
+    <button type="submit">Add Bookmark</button>
+</form>

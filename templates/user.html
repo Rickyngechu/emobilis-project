@@ -1,0 +1,47 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>All in one developer's resources</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+    {#        {% static 'app/' %}#}
+    <link href="  {% static 'app/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link href="  {% static 'app/css/bootstrap-icons.css' %}" rel="stylesheet">
+
+    <link href="  {% static 'app/css/templatemo-topic-listing.css' %}" rel="stylesheet">
+<body>
+
+<div class="container py-4">
+    <h1 style="font-size: 1.8rem">Welcome back paul</h1>
+    <tr>
+        <td>
+            <a href="">{{ user.user_name }}</a>
+        </td>
+        <td>{{ user.email }}</td>
+        <td>You have selected the following resources</td>
+        <br>
+        <td><a href="https://figma.com" style="color: blue"> Figma</a></td>
+        <br>
+        <td><a href="https://unsplash.com" style="color: blue">Unsplash</a></td>
+        <br>
+        <td><a href="https://visualstudio.com" style="color: blue">Vscode</a></td>
+    </tr>
+</div>
+</body>
+</html>

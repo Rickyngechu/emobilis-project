@@ -23,6 +23,10 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('resources', views.resources, name='resources'),
     path('signup', views.signup, name='signup'),
-    path('login', views.login, name='login'),
+    path('logacc', views.logacc, name='logacc'),
+    path('logout', views.logout, name='logout'),
+    path('user', views.user, name='user'),
+    path('add/<int:resource_id>/', views.add_bookmark, name='add_bookmark'),
+    path('remove/<int:bookmark_id>/', views.remove_bookmark, name='remove_bookmark'),
     path('admin/', admin.site.urls),
 ]

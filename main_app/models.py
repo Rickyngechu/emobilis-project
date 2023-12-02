@@ -5,11 +5,21 @@ from django.db import models
 from django import forms
 
 
+class Resource(models.Model):
+    name = models.CharField(max_length=40)
+    link = models.CharField(max_length=50)
+    desc = models.CharField(max_length=100)
+    picture = models.ImageField(upload_to="resources")
+
+
 class User(models.Model):
     username = models.CharField(max_length=255, unique=True)
     email = models.EmailField(max_length=255, unique=True)
     password = models.CharField(max_length=128)
-    user_type = models.CharField(max_length=10, choices=(('employee', 'Employee'), ('staff', 'Staff')))
+    user_type = models.CharField(max_length=10, choices=(('staff', 'Developer'), ('staff', 'User')))
+
+    def __str__(self):
+        return self.username
 
 
 class UserForm(forms.ModelForm):
@@ -19,5 +29,17 @@ class UserForm(forms.ModelForm):
 
 
 class LoginForm(forms.Form):
-    email = forms.EmailField(max_length=255, label='Email')
+    username = forms.CharField(max_length=255, label='username')
     password = forms.CharField(max_length=128, label='Password', widget=forms.PasswordInput())
+
+
+class Resource(models.Model):
+    title = models.CharField(max_length=255)
+    url = models.URLField()
+    description = models.TextField(blank=True)
+
+
+class Bookmark(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    resource = models.ForeignKey(Resource, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
