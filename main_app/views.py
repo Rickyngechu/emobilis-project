@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 
+from main_app.app_forms import ResourceForm
 from main_app.models import UserForm, LoginForm, Bookmark, Resource
 
 
@@ -42,7 +43,7 @@ def logacc(request):
                 login(request, user)
                 return redirect('resources')
             else:
-                form.add_error('password', 'Invalid email or password')
+                form.add_error('password', 'Invalid username or password')
 
     context = {'form': form}
     return render(request, 'login.html', context)
@@ -77,3 +78,24 @@ def remove_bookmark(request, bookmark_id):
     if bookmark.user == request.user:
         bookmark.delete()
     return redirect('list_bookmarks')
+
+
+def userupdate(request):
+    return render(request, 'userupdate.html')
+
+
+def updates(request):
+    return render(request, 'updates.html')
+
+
+def resource(request):
+    form = ResourceForm()
+    if request.method == 'POST':
+        form = ResourceForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('resource')
+    else:
+        form = ResourceForm()
+    context = {'form': form}
+    return render(request, 'resource.html', context)

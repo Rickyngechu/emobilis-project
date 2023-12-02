@@ -9,7 +9,9 @@ class Resource(models.Model):
     name = models.CharField(max_length=40)
     link = models.CharField(max_length=50)
     desc = models.CharField(max_length=100)
-    picture = models.ImageField(upload_to="resources")
+
+    def __str__(self):
+        return self.name
 
 
 class User(models.Model):
@@ -33,13 +35,9 @@ class LoginForm(forms.Form):
     password = forms.CharField(max_length=128, label='Password', widget=forms.PasswordInput())
 
 
-class Resource(models.Model):
-    title = models.CharField(max_length=255)
-    url = models.URLField()
-    description = models.TextField(blank=True)
-
-
 class Bookmark(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     resource = models.ForeignKey(Resource, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
+
+# class DeveloperResource(models.Model)

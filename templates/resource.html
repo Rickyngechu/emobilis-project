@@ -1,7 +1,6 @@
+
 {% load crispy_forms_filters %}
 {% load static %}
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,17 +35,18 @@
     <link href="{% static 'app/css/bootstrap-icons.css' %}" rel="stylesheet"/>
 
     <link href="{% static 'app/css/templatemo-topic-listing.css' %}" rel="stylesheet"/>
-    <title> Create account</title>
+    <title> Add resource</title>
 </head>
 <body  >
   <div class="container">
       <div class="row justify-content-center mt-lg-5 ">
           <div class="col-sm-4 rounded-5">
+              <p>Enter your resource</p>
               <form action="" method="post" class="shadow py-3 px-2" >
                   {% csrf_token %}
                   {{ form | crispy}}
-                  <button class="btn btn-dark">Create Account</button>
-              <p style="font-size: 1rem;margin-top: 1rem">Already have an account</p><a href="{% url 'logacc' %}"  class="btn " style="background-color: orange">log in</a>
+                  <button class="btn btn-dark">Add resource</button>
+              <p style="font-size: 1rem;margin-top: 1rem">Go to resources</p><a href="{% url 'resources' %}"  class="btn " style="background-color: orange">Resources</a>
               </form>
           </div>
       </div>
